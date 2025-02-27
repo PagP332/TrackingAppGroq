@@ -5,7 +5,7 @@ import { Colors } from "@/constants/Colors"
 import { name } from "@/constants/Config"
 import React from "react"
 
-const debug_border = true
+const debug_border = false
 
 export default function HomeScreen() {
   return (
@@ -28,7 +28,7 @@ const styles = StyleSheet.create({
     alignItems: "center",
     justifyContent: "center",
     marginTop: 20,
-    padding: 10,
+    paddingTop: 10,
     // backgroundColor: "white",
   },
   welcomeContainer: {
