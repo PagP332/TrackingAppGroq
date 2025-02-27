@@ -4,11 +4,11 @@
 
 Project Start: 02-27-2025
 
-Expense Tracker with AI capabilities using Groq.
+Expense Tracker with AI capabilities using [Groq](https://console.groq.com/docs/).
 
-Created in React Native, powered by Supabase and Groq
+Created in React Native, powered by [Supabase](https://supabase.com) and [Groq](https://console.groq.com/docs/)
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+This is an [Expo](https://expo.dev) project.
 
 ## Learn more about Expo
 
