@@ -8,7 +8,7 @@ import React from "react"
 const debug_border = false
 
 export default function HomeScreen() {
-  const [listData, setListData] = React.useState(["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", ""])
+  const [listData, setListData] = React.useState(["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14"])
 
   const profileButtonPressed = () => {
     alert("Profile Button Pressed")
@@ -26,7 +26,7 @@ export default function HomeScreen() {
 
   function TrackerList({ data }) {
     return (
-      <View style={[{ flex: 1, justifyContent: "center", alignContent: "center" }, debug_border && styles.debug_border]}>
+      <View style={{ flex: 1, width: "100%" }}>
         <FlatList data={data} renderItem={renderListItem} />
       </View>
     )
@@ -45,7 +45,7 @@ export default function HomeScreen() {
         </TouchableOpacity>
       </View>
       <View style={[styles.mainContainer, debug_border && styles.debug_border]}>
-        <TrackerList data={listData} />
+        <TrackerList data={listData} style={[{ flex: 1 }, debug_border && styles.debug_border]} />
       </View>
     </View>
   )
@@ -83,7 +83,16 @@ const styles = StyleSheet.create({
     padding: 10,
     backgroundColor: Colors.light.tint,
   },
-
+  itemList: {
+    flex: 1,
+    alignItems: "center",
+    justifyContent: "center",
+    marginVertical: 10,
+    borderRadius: 20,
+    padding: 2,
+    borderColor: "black",
+    borderWidth: 2,
+  },
   textBox: { paddingTop: 5 },
   debug_border: { borderWidth: 2, borderColor: "rgb(255, 0, 0)" },
 })
